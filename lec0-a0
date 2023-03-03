@@ -1,0 +1,19 @@
+skapa alias:
+URL="https://web-engineering.big.tuwien.ac.at/s23/a0"
+
+anrop:
+curl $URL -v
+
+method:
+curl -X get $URL
+
+postrequest:
+curl -d '{ "name": "William", lastname: "Hedlund" }' -H "Content-Type: application/json" $url
+
+A0 lab:
+token request:
+curl -d '{ "matnr": "12233006" }' -H "Content-Type: application/json" https://web-engineering.big.tuwien.ac.at/s23/a0/token
+
+	respons: 4e08df9b-39c3-464f-a0f0-3a5ec4004757
+put request:
+curl -X PUT -H "Authorization: Token 4e08df9b-39c3-464f-a0f0-3a5ec4004757" https://web-engineering.big.tuwien.ac.at/s23/a0/participants/wilhetuwien
